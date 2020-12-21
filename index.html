@@ -6,6 +6,7 @@
     <title>Burger</title>
   </head>
   <body>
+    <input class="scrvi-nome "type="text" name="scrivi il tuo nome " placeholder="Name Your Burger" value="">
     <div class='ingredient-container'>
       <p>Cheese <input type="checkbox" class="ingredient-checkbox" name="list[]" value='5'></p>
       <p>Egg <input type="checkbox" class="ingredient-checkbox" name="list[]" value='5'></p>
@@ -16,7 +17,7 @@
     </div>
 
     <!-- sconto -->
-    <p>Discount Coupon <input class="discount "type="text" name="discount" placeholder="012code" value=""></p>
+    <p>Discount Coupon <input id="discount" type="text" name="discount" placeholder="001,002,003,004" value=""></p>
 
     <!-- Calcolo ingredienti selezionati -->
     <button id='button-ingredient' type="button" name="button">Calculate</button>
