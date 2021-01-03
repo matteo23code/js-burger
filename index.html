@@ -3,32 +3,45 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Burger</title>
   </head>
   <body>
-    <input class="scrvi-nome "type="text" name="scrivi il tuo nome " placeholder="Name Your Burger" value="">
-    <div class='ingredient-container'>
-      <p>Cheese <input type="checkbox" class="ingredient-checkbox" name="list[]" value='5'></p>
-      <p>Egg <input type="checkbox" class="ingredient-checkbox" name="list[]" value='5'></p>
-      <p>Mustard <input type="checkbox" class="ingredient-checkbox" name="list[]" value='5'></p>
-      <p>Tomato <input type="checkbox" class="ingredient-checkbox" name="list[]" value='6'></p>
-      <p>Lettuce <input type="checkbox" class="ingredient-checkbox" name="list[]" value='6'></p>
-      <p>Ketchup <input type="checkbox" class="ingredient-checkbox" name="list[]" value='6'></p>
+    <div class="container">
+      <header class="title">
+        <h1>Create Your Burger</h1>
+        <img src="img/burger-top.png" alt="">
+      </header>
+      <main>
+        <div class="second-title">
+          <input class="burger-name "type="text" name="scrivi il tuo nome " placeholder="Name Your Burger" value="">
+        </div>
+        <section class="ingredient-container flex">
+          <label><img src="img/cheese.svg" alt="">Cheese <input type="checkbox" class="ingredient-checkbox" name="list[]" value='5'></label>
+          <label><img src="img/fried-egg.svg" alt="">Egg <input type="checkbox" class="ingredient-checkbox" name="list[]" value='5'></label>
+          <label><img src="img/mustard.svg" alt="">Mustard <input type="checkbox" class="ingredient-checkbox" name="list[]" value='5'></label>
+        </section>
+        <section class="ingredient-container flex">
+          <label><img src="img/tomato.svg" alt="">Tomato <input type="checkbox" class="ingredient-checkbox" name="list[]" value='6'></label>
+          <label><img src="img/lettuce.svg" alt="">Lettuce <input type="checkbox" class="ingredient-checkbox" name="list[]" value='6'></label>
+          <label><img src="img/ketchup.svg" alt="">Ketchup <input type="checkbox" class="ingredient-checkbox" name="list[]" value='6'></label>
+        </section>
+        <div class="discount-box">
+          <p>Discount Coupon  <input id="discount" type="text" name="discount" placeholder="001,002,003,004" value=""></p>
+        </div>
+        <button id='button-ingredient' type="button" name="button">calculate</button>
+      </main>
+      <footer>
+        <h4>Your Price</h4>
+        <span id="total-span">$ 50</span>
+      </footer>
+
+
+
+
+
     </div>
-
-    <!-- sconto -->
-    <p>Discount Coupon <input id="discount" type="text" name="discount" placeholder="001,002,003,004" value=""></p>
-
-    <!-- Calcolo ingredienti selezionati -->
-    <button id='button-ingredient' type="button" name="button">Calculate</button>
-
-    <div id="total-div">Il totale è: <span></span></div>
-
-
-
-
-
-
     <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>
